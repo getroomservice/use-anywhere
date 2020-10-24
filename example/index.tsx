@@ -10,12 +10,19 @@ function Input() {
   return <input onChange={e => setState(e.target.value)} value={state} />;
 }
 
+const inputWithDefault = createAtom<string>('i am default value');
+
+function InputWithDefault() {
+  const [state, setState] = useAnywhere<string>(inputWithDefault);
+  return <input onChange={e => setState(e.target.value)} value={state} />;
+}
+
 const App = () => {
   return (
     <Anywhere>
       <Input />
       <Input />
-      <Input />
+      <InputWithDefault />
       <div>I'm unrelated and don't rerender!</div>
     </Anywhere>
   );

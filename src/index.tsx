@@ -11,9 +11,9 @@ export interface Atom<T extends any> {
   symbol: Symbol;
 }
 
-export function createAtom<T extends any>(props?: { default: T }) {
+export function createAtom<T extends any>(defaultState?: T) {
   return {
-    default: props!.default,
+    default: defaultState,
     symbol: Symbol('atom'),
   };
 }

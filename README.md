@@ -5,7 +5,7 @@
   <br>
 </h1>
 
-`use-anywhere` is a hook that lets you share state between components without rerendering the entire tree. It's a bit like Recoil, but under 1kb gziped, so you can embed it within your own libraries.
+`use-anywhere` is a hook that lets you share state between components without rerendering the entire tree. It's a bit like [Recoil](https://recoiljs.org/), but under 1kb gziped, so you can embed it within your own libraries.
 
 # Install
 

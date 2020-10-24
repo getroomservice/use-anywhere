@@ -53,6 +53,7 @@ If you have an atom, you can access state with `useAnywhere`:
 
 ```tsx
 import { useAnywhere } from 'use-anywhere';
+import { atom } from '../atoms';
 
 function MyComponent() {
   const [state, setState] = useAnywhere(atom);
